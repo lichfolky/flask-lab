@@ -1,30 +1,62 @@
-# TODO
+# Flask
+https://flask.palletsprojects.com/en/3.0.x/  
 
-eb Apps with Flask
-HTTP Requests
-lesson Build Your First Flask App
+## First Flask webapp
+venv
+```
+py -m venv .venv
+.venv\Scripts\activate
+pip install -r requirements.txt
+flask --app nomefile run
+``` 
+se app.py no --app
+flask run --host=0.0.0.0
 
+flask run --debug
+
+### HTML Escaping
+return f"Hello, {escape(name)}!"
+
+### Routing
+```
+@app.route('/')
+def index():
+    return 'Index Page'
+
+@app.route('/hello')
+def hello():
+    return 'Hello, World'
+
+```
+### WebApps con Flask
+https://flask.palletsprojects.com/en/3.0.x/quickstart/
 Flask Templates
 Flask Forms
-Flask Environment Setup
+HTTP Requests
+
+## Database
+Flask SQLAlchemy
+https://flask-sqlalchemy.palletsprojects.com/en/3.1.x/quickstart/
+
+Databases Reading, Updating and Deleting CRUD
+
+API
 
 
 
-Flask-SQLAlchemy
-Databases in Flask - Reading, Updating and Deleting
-FlaskFM
-video Flask Database Setup
+HEROKU O VERCEL Deploying a Flask App
 
-Welcome to Accounts and Authentication
-lesson Introduction to Accounts
-lesson Introduction to Authentication with Flask
-quiz Flask Authentication and Accounts
-project Travel Sites
+Altro:
+Introduction to Authentication with Flask
 
-HEROKU 
-informational Welcome to Deploying an Application
-article Deploying a Flask App
-quiz Deploying a Flask App
-video Flask Deployment Setup
+- wtform
+
+- flask-wtf
+https://flask-wtf.readthedocs.io/en/1.2.x/
+
+flask-jwt
+flask-migrate
+flask-restful
+
 
 
